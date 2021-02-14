@@ -34,16 +34,24 @@ A Stack is an ordered collection of items into which new items may be inserted a
 
 
 ### **Applications of Stack:**  
- * #### **Infix to Postfix Conversion**  
+ * ### **Infix to Postfix Conversion**  
     The **infix** notation is what we come across in our general mathematics, where the operator is written
 in-between the operands.  
- For example, the expression to add two numbers A and B is written in infix
-notation as: A+B 
+ **For example**, the expression to add two numbers A and B is written in infix
+notation as: **A+B**  
+    * **Operator Precedence:**
+  
+      _Exponential (^ or $):_ ------------- Highest precedence  
+
+      _Multiplication/Division (*, /):_ ---- Next precedence
+
+      _Addition/Subtraction (+, -):_ ------ Least precedence
 
    In the **postfix** notation the operator(s) are written after the operands, so it is called the postfix notation.  
  The above expression
-if written in postfix expression looks like: AB+
-   #### **Algorithm of Conversion**
+if written in postfix expression looks like: **AB+**  
+In a postfix expression operands appear before the operator, so there is no need for operator precedence and other rules
+   #### **Algorithm of Infix to Postfix Conversion**
    1. Enclose the infix expression with a parenthesis"()".
    2. Read the infix expression form left to right.
    3. If opening parenthesis is encountered, push it to the stack.
